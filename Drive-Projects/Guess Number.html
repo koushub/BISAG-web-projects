@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        var message = "";
+        var answer = 5;
+        var counter = 1;
+        var flag = false;
+
+        do{
+            var input1 = prompt("Guess the number from 1 to 10");
+
+            input1 = parseInt(input1);
+
+            if( input1!= answer){
+                alert("Nope - Wrong!");
+            }else{
+                flag = true;
+                break;
+            }
+
+            if(counter == 3){
+                break;
+            }
+
+            counter++;
+
+        }while(answer != input1);
+
+        if(flag ){
+            message += "You Guessed it RIGHT BINGOOOOOOOOOOOOOO " + answer + "is the right Answer.";
+
+        }else{
+            message += "Sorry Better luck Next Time!";
+
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>Guess the number</h1>
+    <script>
+        document.write(message)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+    margin: 0;
+    color: #34495e;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+}
+
+.container , .formbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    height: 100vh;
+    background-color: #6fa5f6;
+    flex-direction: column;
+}
+
+.formbox{
+    background-color: #121726;
+    width: 350px;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0.6rem;
+}
+
+#mypass{
+    position: relative;
+    width: 180px;
+    margin-right: 0.9rem;
+}
+
+input{
+    border-radius: 0.3rem;
+    border: none;
+    color: #575dbc;
+font-size: 1.3rem;
+outline: none;
+transition-delay: 0.2s;
+}
+
+.showPass{
+    position: relative;
+    margin-left: 1.3rem;
+    cursor: pointer;
+}
+
+.showPass .eye-open{
+    width: 26px;
+    height: 25px !important;
+    margin-top: -1px !important;
+    transition: all 0.2s ease;
+}
+
+.showPass .eye-closed{
+    width: 26px;
+    height: 18px !important;
+    margin-top: 0.625px !important;
+    margin-left: -1.9rem;
+    transition: all 0.2s ease;
+}
+
+.inner{
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 5px;
+    width: 250px;
+    clip-path: circle(8% at 87.2% 49.2%);
+    transition: all 0.25s ease-out;
+    position: absolute;
+    overflow: hidden;
+}
+
+.inner-hover{
+    background-color: white;
+    clip-path: circle(75%);
+}
+.color-change{
+    transition-delay: 0.2s;
+    color: #121726 !important;
+}
+
+.validator{
+    margin-top: 20px;
+    width: 310px;
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    padding: 7px 20px 0px;
+    background-color: #121726;
+}
+
+.validator p{
+    opacity: 0.6;
+    transition: all 0.3s ease-out;
+}
+
+.validator p span{
+    font-size: 15px;
+    color: white;
+    margin-left: 35px;
+    font-weight: 500;
+}
+
+.validator p i{
+    position: absolute;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 25px;
+    font-size: 15px;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa-check{
+    opacity: 0;
+}
+
+.fa-circle-xmark{
+    opacity: 1;
+}
